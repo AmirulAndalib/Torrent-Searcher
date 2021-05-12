@@ -8,7 +8,7 @@
       "torrent",
       "python"
     ],
-    "repository": "https://github.com/devillD/Torrent-Searcher.git",
+    "repository": "https://github.com/AmirulAndalib/ts.git",
     "website": "https://t.me/trntsrcbot",
     "success_url": "https://t.me/trntsrcbot",
     "stack": "container",
@@ -27,6 +27,10 @@
         "description": "This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org.",
         "value": "",
         "required": true
+      ],
+      "buildpacks": [
+    {
+      "url": "heroku/python"    
       }
     }
 }
