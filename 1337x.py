@@ -69,10 +69,10 @@ async def find(_, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(f"Next",
-                                         callback_data="next"),
-                    InlineKeyboardButton(f"{emoji.CROSS_MARK}",
-                                         callback_data="delete")
+                    InlineKeyboardButton('Next', callback_data="next"),
+                    InlineKeyboardButton(
+                        f"{emoji.CROSS_MARK}", callback_data="delete"
+                    ),
                 ]
             ]
         ),
@@ -106,13 +106,11 @@ async def callback_query_next(_, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(f"Prev",
-                                         callback_data="previous"),
-                    InlineKeyboardButton(f"{emoji.CROSS_MARK}",
-                                         callback_data="delete"),
-                    InlineKeyboardButton(f"Next",
-                                         callback_data="next")
-                    
+                    InlineKeyboardButton('Prev', callback_data="previous"),
+                    InlineKeyboardButton(
+                        f"{emoji.CROSS_MARK}", callback_data="delete"
+                    ),
+                    InlineKeyboardButton('Next', callback_data="next"),
                 ]
             ]
         ),
@@ -146,12 +144,11 @@ async def callback_query_previous(_, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(f"Prev",
-                                         callback_data="previous"),
-                    InlineKeyboardButton(f"{emoji.CROSS_MARK}",
-                                         callback_data="delete"),
-                    InlineKeyboardButton(f"Next",
-                                         callback_data="next")
+                    InlineKeyboardButton('Prev', callback_data="previous"),
+                    InlineKeyboardButton(
+                        f"{emoji.CROSS_MARK}", callback_data="delete"
+                    ),
+                    InlineKeyboardButton('Next', callback_data="next"),
                 ]
             ]
         ),
